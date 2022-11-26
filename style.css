@@ -115,10 +115,15 @@ p {
 @media only screen and (max-width: 475px ){
     .container{
         width: 100vw;
-        padding: 20px;
+        /* padding: 20px; */
     }
     .top-part,.chart-container{
-        width:80%;
+        width:94%;
     }
-    
+    .total-amt h1{
+        font-size: 32px;
+    }
+    small{
+        font-size: 12px;
+    }
 }
