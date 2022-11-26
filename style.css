@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    /* Neutral */
+
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-part {
+    display: flex;
+    background-color: var(--soft-red);
+    width: 40%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 25px;
+    color: #fff;
+}
+
+.top-part img {
+    width: 80px;
+    height: auto;
+}
+
+.balance h1 {
+    font-size: 24px;
+}
+
+.chart-container {
+    background-color: #fff;
+    width: 40%;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+small {
+    font-size: 16px;
+}
+
+.total-spending small {
+    color: var(--medium-brown);
+}
+
+.total-amt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.total-amt h1 {
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--dark-brown);
+}
+#mychart{
+    position: relative;
+}
+#mychart:hover{
+  cursor: pointer;
+}
+hr {
+    border: none;
+    width: 100%;
+    height: 1.2px;
+    background: hsla(28, 10%, 53%, 0.5);
+    margin: 15px 0;
+}
+
+p {
+    color: var(--dark-brown);
+    font-weight: 700;
+    font-size: 15px;
+    text-align: right;
+}
+
+.attribution {
+    font-size: 20px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 475px ){
+    .container{
+        width: 100vw;
+        padding: 20px;
+    }
+    .top-part,.chart-container{
+        width:80%;
+    }
+    
+}
