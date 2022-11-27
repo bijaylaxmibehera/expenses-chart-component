@@ -116,6 +116,9 @@ p {
     .container{
         width: 100vw;
         /* padding: 20px; */
+        justify-content: flex-start;
+        margin-top: 30px;
+        min-height: 80vh;
     }
     .top-part,.chart-container{
         width:94%;
